@@ -1,3 +1,26 @@
+# Brainstorming
+
+Clemens suggestions:
+
+- One dataset for all questions
+- Dataset with discrete features, spatial information for each feature, multiple variables for each feature
+- Ideal dataset: Varna, but that's not published yet. So maybe `Michelsberg` in the `archdata` R package by Höhn (2002)?
+- A possible sequence of tasks for `Michelsberg`:
+
+  1. Counts and lists of unique values for `site_name` & `mbk_phases`
+  2. Column sums for material variables (`to3`, `f4`, ..., `t1a`) 
+  3. Grouped counts of material by `site_name` & `mbk_phases` and further pivot tables
+  4. Visualisation of grouped counts in plot matrizes. For `mbk_phases` these can be constructed as time series plots
+  5. Spatial map of sites with mapping of counts computed in *iii.*
+  6. Correspondence Analysis (CA) of material variables
+  7. 2D and 3D Visualisation of CA results with mapping of `site_name` & `mbk_phases`
+  8. Mapping of CA axis rank on spatial map
+  9. **Bonus** Chi-square distance between all material variables and network visualisation and analysis
+
+- All results must be presented in one html report with all code and plots. This can be rendered from IPython Notebook, Rmarkdown, Latex, etc. or compiled manually
+
+# Abstract
+
 Workshop organisation:
 - Schmid, Clemens (Kiel University)
 - Hinz, Martin (Bern University)
@@ -11,7 +34,7 @@ Keywords:
 
 ***
 
-# Short Abstract (240 words)
+## Short Abstract (240 words)
 
 ## CAA Scripting Languages Hackathon I - Can you code this?
 
@@ -27,9 +50,9 @@ The workshop is organized by the ISAAKiel group (Initiative for Statistical Anal
 
 ***
 
-# Long Abstract (510 words)
+## Long Abstract (510 words)
 
-## CAA Scripting Languages Hackathon I - Can you code this?
+### CAA Scripting Languages Hackathon I - Can you code this?
 
 In general, scientific scripting languages are the best interface for archaeologists to translate research questions into a machine-readable and executable form for quantitative analysis. For every step of data processing - data acquisition, analysis and presentation - there are high-quality software frameworks that enable fast, elegant, human-readable and reproducible coding. And yet, script languages are still not widely used! One of the main reason for this is the often steep learning curve. An important goal of the proposed Special Interest Group on Scientific Scripting Languages in Archaeology (SIG SSLA) is to provide guidance on how to overcome this obstacle.
 
