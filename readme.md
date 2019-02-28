@@ -4,7 +4,7 @@ Clemens suggestions:
 
 - One dataset for all questions
 - Dataset with discrete features, spatial information for each feature, multiple variables for each feature
-- Ideal dataset: Varna, but that's not published yet. So maybe `Michelsberg` in the `archdata` R package by Höhn (2002)?
+- Ideal dataset: Varna, but that's not published yet. So maybe `Michelsberg` in the `archdata` R package by Höhn (2002)? Or `matuskovo` in the `quantAAR` R package by Tocik (1979) if we add spatial information (would that be possible, Martin?)?
 - A possible sequence of tasks for `Michelsberg`:
 
   1. Counts and lists of unique values for `site_name` & `mbk_phases`
