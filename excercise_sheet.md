@@ -12,5 +12,3 @@
   7. 2D and 3D Visualisation of CA results with mapping of `site_name` & `mbk_phases`
   8. Mapping of CA axis rank on spatial map
   9. **Bonus** Chi-square distance between all material variables and network visualisation and analysis
-
-- All results must be presented in one html report with all code and plots. This can be rendered from IPython Notebook, Rmarkdown, Latex, etc. or compiled manually
