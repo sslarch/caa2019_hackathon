@@ -1,0 +1,147 @@
+\documentclass[a3, ruledsections, 8pt]{sciposter}
+\usepackage{lipsum}
+\usepackage{epsfig}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{multicol}
+\usepackage{graphicx,url}
+\usepackage[german, english]{babel}
+\usepackage[utf8]{inputenc}
+\renewcommand{\titlesize}{\LARGE}
+\renewcommand{\authorsize}{\small}
+\renewcommand{\instsize}{\footnotesize}
+
+%\usepackage{fancybullets}
+\newtheorem{Def}{Definition}
+\definecolor{SectionCol}{rgb}{1.0,0.6,0.0} %orange
+
+
+\title{W4 CAA Scripting Languages Hackathon I – Can you code this?}
+%Título do projeto
+
+\author{Clemens Schmid$^{1}$, Martin Hinz$^{2}$, Carolin Tietze$^{3}$}
+%nome dos autores
+
+\institute
+{$^{1}$ Römisch-Germanisches Zentralmuseum Leibniz-Forschungsinstitut für Archäologie: Mainz, Rheinland-Pfalz\\
+$^{2}$ Institut für Archäologisches Wissenschaften, Universität Bern \\
+$^{3}$ Institut für Klassische Altertumskunde, Christian-Albrechts-Universität zu Kiel
+}
+%Nome e endereço da Instituição
+
+\email{clemens@nevrome.de, martin.hinz@iaw.unibe.ch, ctietze1991@gmail.com}
+% Onde você coloca os emails dos integrantes
+
+
+%\date is unused by the current \maketitle
+
+\rightlogo[1]{images/front_20180624.png}
+\leftlogo[1]{images/49449374.png}
+% Exibe os logos (direita e esquerda)
+% Procure usar arquivos png ou jpg, e de preferencia mantenha na mesma pasta do .tex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Begin of Document
+
+
+
+\begin{document}
+%define conference poster is presented at (appears as footer)
+
+\conference{{\bf CAA 2019} Check Object Integrity - 47th Computer Applications and Quantitative Methods in Archaeology - 23-27 April 2019}
+
+%\LEFTSIDEfootlogo
+% Uncomment to put footer logo on left side, and
+% conference name on right side of footer
+
+% Some examples of caption control (remove % to check result)
+
+%\renewcommand{\algorithmname}{Algoritme} % for Dutch
+
+%\renewcommand{\mastercapstartstyle}[1]{\textit{\textbf{#1}}}
+%\renewcommand{\algcapstartstyle}[1]{\textsc{\textbf{#1}}}
+%\renewcommand{\algcapbodystyle}{\bfseries}
+%\renewcommand{\thealgorithm}{\Roman{algorithm}}
+
+\maketitle
+
+%%% Begin of Multicols-Enviroment
+%\begin{multicols}{1}
+
+%%% Abstract
+%\begin{abstract}
+%No modelo que a Danielle postou não tinha resumo, então confirmem para saber se precisa ou não.
+%Morphological pattern spectra computed from granulometries are frequently used
+%to classify the size classes of details in textures and images. An extension
+%of this technique, which retains information on the spatial
+%distribution of the details in each size class is developed. Algorithms for
+%computation of these spatial pattern spectra for a large number of
+%granulometries on binary images are presented.
+%\end{abstract}
+
+%%% Introduction
+
+\section{General Information}
+
+\begin{itemize}
+\item 3 hours to work on all tasks, breaks can be taken as you wish.
+\item All results must be submitted in one html report with all code and plots. This can be rendered from IPython Notebook, Rmarkdown, Latex, etc. or compiled manually. See the submission example here.
+\item The organizers of this workshop are available for questions and advice. They are able to assist you with problems as far as they are familiar with your toolset.
+\end{itemize}
+
+\section{Dataset}
+
+\PARstart{T}{he} data for this excercise --- \verb|Michelsberg| --- are be taken from the R package \verb|archdata| (Carlson/Roth 2018). 
+
+\section{Tasks}
+
+\begin{enumerate}
+\item Counts and lists of unique values for \verb|site_name| \& \verb|mbk_phases|
+\item Column sums for material variables (\verb|to3|, \verb|f4|, ..., \verb|t1a|)
+\item Grouped counts of material by \verb|site_name| \& \verb|mbk_phases| and further cross tables
+\item Visualisation of grouped counts in plot matrizes. For \verb|mbk_phases| these can be constructed as time series plots
+\item Spatial map of sites with mapping of counts computed in task 3.
+\item Correspondence Analysis (CA) of material variables
+\item 2D and 3D Visualisation of CA results with mapping of \verb|site_name| \& \verb|mbk_phases|
+\item Mapping of CA axis rank on spatial map
+\item \textbf{Bonus} Chi-square distance between all material variables and network visualisation and analysis
+\end{enumerate}
+
+%%% References
+
+%% Note: use of BibTeX als works!!
+
+%\bibliographystyle{plain}
+%\begin{thebibliography}{1}
+%
+%\bibitem{Flusser:Suk:93}
+%J.~Flusser and T.~Suk.
+%\newblock Pattern recognition by affine moment invariants.
+%\newblock {\em Pattern Recognition}, 26:167--174, 1993.
+%
+%\bibitem{Hu:62}
+%M.~K. Hu.
+%\newblock Visual pattern recognition by moment invariants.
+%\newblock {\em IRE Transactions on Information Theory}, IT-8:179--187, 1962.
+%
+%\bibitem{maragos89:_patter}
+%P.~Maragos.
+%\newblock Pattern spectrum and multiscale shape representation.
+%\newblock {\em IEEE Trans. Patt. Anal. Mach. Intell.}, 11:701--715, 1989.
+%
+%\bibitem{Meijster:Wilkinson:PAMI}
+%A.~Meijster and M.~H.~F. Wilkinson.
+%\newblock A comparison of algorithms for connected set openings and closings.
+%\newblock {\em IEEE Trans. Patt. Anal. Mach. Intell.}, 24(4):484--494, 2002.
+%
+%\bibitem{Nacken:thesis}
+%P.~F.~M. Nacken.
+%\newblock {\em Image Analysis Methods Based on Hierarchies of Graphs and
+%  Multi-Scale Mathematical Morphology}.
+%\newblock PhD thesis, University of Amsterdam, Amsterdam, The Netherlands,
+%  1994.
+%
+%\end{thebibliography}
+
+%\end{multicols}
+
+\end{document}
