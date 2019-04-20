@@ -98,6 +98,53 @@ The data for this excercise --- \verb|Michelsberg| --- are taken from the R pack
 
 \textit{From ?archdata::Michelsberg:}
 
+\begin{itemize}
+\item id: Unique identifier (categorical, integer)
+\item site\_name: Name of site (categorical, character)
+\item catalogue\_nr: Number in catalogue of Höhn (2002) (categorical, integer)
+\item feature\_nr: Number of the archaeological feature (categorical, numeric)
+\item to3: Pot/vessel type 3 count
+\item f4: Bottle type 4 count
+\item b2: Beaker type 2 count
+\item to2: Pot/vessel type 2 count
+\item b3: Beaker type 3 count
+\item b7: Beaker type 7 count
+\item kw5: Carinated bowl type 5 count
+\item vg1: Storage vessel type 1 count
+\item vg2: Storage vessel type 2 count
+\item t4a: Tulip beaker type 4a count
+\item kw2: Carinated bowl type 2 count
+\item kw4: Carinated bowl type 4 count
+\item b5: Beaker type 5 count
+\item t3b: Tulip beaker type 3b count
+\item f3: Bottle type 3 count
+\item kw3: Carinated bowl type 3 count
+\item kw1: Carinated bowl type 1 count
+\item b6: Beaker type 6 count
+\item to1: Pot/vessel type 1 count
+\item b1: Beaker type 1 count
+\item t3a: Tulip beaker type 3a count
+\item vg4: Storage vessel type 4 count
+\item ks2: Conical bowl type 2 count
+\item ks1: Conical bowl type 1 count
+\item t2b: Tulip beaker type 2b count
+\item f2: Bottle type 2 count
+\item bs3: Globular bowl type 3 count
+\item t2a: Tulip beaker type 2a count
+\item bs2: Globular bowl type 2 count
+\item b4: Beaker type 4 count
+\item bs1: Globular bowl type 1 count
+\item f1: Bottle type 1 count
+\item t1b: Tulip beaker type 1b count
+\item vg3: Storage vessel type 3 count
+\item t1a: Tulip beaker type 1a count
+\item mbk\_phase: MBK phase according to Lüning (1967) as an ordered factor with levels $<$ I/II $<$ II $<$ II/III $<$ III $<$ III-V $<$ III/IV $<$ IV $<$ IV/V $<$ Munz $<$ V
+\item x\_utm32n: x coordinate in m; projection UTM WGS 84, zone 32 nord
+\item y\_utm32n: y coordinate in m; projection UTM WGS 84, zone 32 nord
+\end{itemize}
+
+\medskip
+
 Höhn (2002) recorded pottery vessel shapes from 108 archaeological features (pits, ditches etc.) from 69 sites of the Central European Younger Neolithic Michelsberg Culture (MBK; 4350-3500 BC) following Lüning's (1967) typology. Her correspondence analysis of the abundance data (columns 5 to 39) exhibits a pronounced Guttman effect or arch, suggesting the data set is structured by a time gradient. Recently Mischka et al. (2015) projected an 109th Michelsberg assemblage, Flintbek LA48, a pit with Michelsberg pottery from a North German site of the Funnel Beaker Culture (TRB), as a supplementary row into the existing chronology thereby connecting the relative chronologies of TRB and MBK. The data frame contains as attributes the references for the data, a typological key and the map projection. Note that ambiguous fragments of conical bowls (ks1 and ks2) are assigned as 0.5 to each of the two types resulting also in positive entries suitable to analysis by CA.
 
 \medskip
@@ -108,11 +155,13 @@ Mischka, D., Roth, G. and K. Struckmeyer 2015. Michelsberg and Oxie in contact n
 
 Lüning, J. 1967. Die Michelsberger Kultur: Ihre Funde in zeitlicher und räumlicher Gliederung. Berichte der Römisch-Germanischen Kommission 48, 1-350.
 
+\pagebreak
+
 \section{Tasks}
 
 \begin{enumerate}
-\item Counts and lists of unique values for \verb|site_name| \& \verb|mbk_phases|
-\item Column sums for material variables (\verb|to3|, \verb|f4|, ..., \verb|t1a|)
+\item Create a two-columns table with information about the sites (\verb|site_name|) and the amount of features (\verb|feature_name|) documented per sites. Who many sites are represented in the table by more than one feature? 
+\item Create a two-columns table with information about the material  (\verb|to3|, \verb|f4|, ..., \verb|t1a|)
 \item Grouped counts of material by \verb|site_name| \& \verb|mbk_phases| and further cross tables
 \item Visualisation of grouped counts in plot matrizes. For \verb|mbk_phases| these can be constructed as time series plots
 \item Spatial map of sites with mapping of counts computed in task 3.
