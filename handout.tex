@@ -165,11 +165,10 @@ All these tasks focus on the technical implementation of data analysis, not the 
 \item Create a table with information about the sites (\verb|site_name|) and the amount of features (\verb|feature_name|) documented per sites. Based on this table: Who many sites are represented in the table by more than one feature? 
 \item Create a table with information about the total material occurrence: How many individual objects of \verb|to3|, \verb|f4|, ..., \verb|t1a| do we have in total across all sites? The table should not just contain the shortend type ids (e.g. \verb|to3|), but also a human readable type name (eg. \verb|Pot/vessel type 3|). Plot an ordered bar chart based on this table.
 \item How much artefacts are documented per MBK phase (\verb|mbk_phases|) in total? Visualise the grouped counts with a time series plot. \verb|mbk_phases| is an ordinally scaled time variable. Reduce your data selection to the 6 sites with the most features (cf. Task 1) and draw the same time series for each of these variables (ideally in a plot matrix).
-\item Plot a spatial map of sites based on the coordinate information. Add a meaningful background layer. The size and colour of the site markers should reflect the occurence of \verb|Carinated bowl type| (\verb|kw3|) at the site.
-\item Correspondence Analysis (CA) of material variables
-\item 2D and 3D Visualisation of CA results with mapping of \verb|site_name| \& \verb|mbk_phases|
-\item Mapping of CA axis rank on spatial map
-\item \textbf{Bonus} Chi-square distance between all material variables and network visualisation and analysis
+\item Plot a spatial map of sites based on the coordinate information. The map can be interactive. Add a meaningful background layer. The size and colour of the site markers should reflect the occurence of \verb|Carinated bowl type| (\verb|kw3|) at the site.
+\item Run a Correspondence Analysis (CA) of features and pottery type variables (\verb|to3|, \verb|f4|, ..., \verb|t1a|). Remove very rare types and features with almost no finds beforehand. Prepare two result scatter plots: 2D: Dimension1~Dimension2 and point colour according to the MBK phase (\verb|mbk_phases|). 3D: Dimension1~Dimension2~Dimension3.
+\item Run a Correspondence Analysis (CA) of sites (!) and pottery type variables. Use only binary presence-absence information for the CA, not object count. Plot the resulting rank order along Dimension1 or along a fitted principal curve on a spatial map.
+\item Calculate cultural distance between features (Euclidian distance, Chi-square distance, ...) based on the pottery type variables and visualize the distance network. 
 \end{enumerate}
 
 %%% References
