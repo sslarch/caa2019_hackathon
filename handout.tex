@@ -83,16 +83,30 @@ $^{3}$ Institut für Klassische Altertumskunde, Christian-Albrechts-Universität
 \section{General Information}
 
 \begin{itemize}
-\item A repository with all information and data for this workshop is available at \url{https://github.com/sslarch/caa2019_hackathon}
-\item 2-4 Groups are formed on site according to framework preference and skill levels (\textit{Unconference style}).
-\item You have \textbf{3} hours to work on all tasks, breaks can be taken as you wish. It's not necessary to complete all possible tasks. Work as far as you can go.
-\item All results must be submitted in one reproducible report with all code and plots. This can be rendered from IPython Notebook, Rmarkdown, Latex, etc. or compiled manually. Ideally the report is submitted as a Pull Request to the hackathon repository on github. The file(s) should be added to the \verb|reports| directory.
+\item A \textbf{repository} with all information and data for this workshop is available at \newline \url{https://github.com/sslarch/caa2019_hackathon}
+\item 2-4 \textbf {groups} are formed on site according to framework preference and skill levels (\textit{Unconference style}).
+\item You have \textbf{3} hours to work on all tasks, breaks can be taken as you wish. It's not necessary to complete all possible tasks. Work as far as you can go. This is \textbf{NOT} an exam.
+\item All results must be submitted in one \textbf{reproducible report} with all code and plots. This can be rendered from IPython Notebook, Rmarkdown, Latex, etc. or compiled manually. Ideally the report is submitted as a Pull Request to the hackathon repository on github. The file(s) should be added to the \verb|reports| directory.
 \item The organizers of this workshop are available for questions and advice. They are able to assist you with problems as far as they are familiar with your toolset.
 \end{itemize}
 
 \section{Dataset}
 
-The data for this excercise --- \verb|Michelsberg| --- are taken from the R package \verb|archdata| (Carlson/Roth 2018). 
+The data for this excercise --- \verb|Michelsberg| --- are taken from the R package \verb|archdata| (Carlson/Roth 2018). It's a features by types table of abundance data on vessel types in archaeological features of the Younger Neolithic Michelsberg Culture from Belgium, France and Germany by Birgit Höhn (2002). The 109 observations/lines represent individual features (pits, ditches, etc.) from sites. For each feature we have information about 42 variables/columns. These include identifiers, classified pottery type counts, phase attribution and site coordinates.
+
+\bigskip
+
+\textit{From ?archdata::Michelsberg:}
+
+Höhn (2002) recorded pottery vessel shapes from 108 archaeological features (pits, ditches etc.) from 69 sites of the Central European Younger Neolithic Michelsberg Culture (MBK; 4350-3500 BC) following Lüning's (1967) typology. Her correspondence analysis of the abundance data (columns 5 to 39) exhibits a pronounced Guttman effect or arch, suggesting the data set is structured by a time gradient. Recently Mischka et al. (2015) projected an 109th Michelsberg assemblage, Flintbek LA48, a pit with Michelsberg pottery from a North German site of the Funnel Beaker Culture (TRB), as a supplementary row into the existing chronology thereby connecting the relative chronologies of TRB and MBK. The data frame contains as attributes the references for the data, a typological key and the map projection. Note that ambiguous fragments of conical bowls (ks1 and ks2) are assigned as 0.5 to each of the two types resulting also in positive entries suitable to analysis by CA.
+
+\medskip
+
+Höhn, B. 2002. Die Michelsberger Kultur in der Wetterau. Universitätsforschungen zur prähistorischen Archäologie 87. Bonn: Habelt.
+
+Mischka, D., Roth, G. and K. Struckmeyer 2015. Michelsberg and Oxie in contact next to the Baltic Sea. In: Neolithic Diversities. Perspectives from a conference in Lund, Sweden. Acta Archaeologica Lundensia Ser. 8, No. 65, edited by Kr. Brink et al., pp 241–250.
+
+Lüning, J. 1967. Die Michelsberger Kultur: Ihre Funde in zeitlicher und räumlicher Gliederung. Berichte der Römisch-Germanischen Kommission 48, 1-350.
 
 \section{Tasks}
 
