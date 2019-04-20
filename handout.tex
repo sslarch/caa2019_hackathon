@@ -85,7 +85,7 @@ $^{3}$ Institut für Klassische Altertumskunde, Christian-Albrechts-Universität
 \begin{itemize}
 \item A \textbf{repository} with all information and data for this workshop is available at \newline \url{https://github.com/sslarch/caa2019_hackathon}
 \item 2-4 \textbf {groups} are formed on site according to framework preference and skill levels (\textit{Unconference style}).
-\item You have \textbf{3} hours to work on all tasks, breaks can be taken as you wish. It's not necessary to complete all possible tasks. Work as far as you can go. This is \textbf{NOT} an exam.
+\item You have \textbf{5} hours to work on all tasks, breaks can be taken as you wish. It's not necessary to complete all possible tasks. Work as far as you can go. Most tasks are independent of each other, so you can skip boring ones. This is \textbf{NOT} an exam.
 \item All results must be submitted in one \textbf{reproducible report} with all code and plots. This can be rendered from IPython Notebook, Rmarkdown, Latex, etc. or compiled manually. Ideally the report is submitted as a Pull Request to the hackathon repository on github. The file(s) should be added to the \verb|reports| directory.
 \item The organizers of this workshop are available for questions and advice. They are able to assist you with problems as far as they are familiar with your toolset.
 \end{itemize}
@@ -159,12 +159,13 @@ Lüning, J. 1967. Die Michelsberger Kultur: Ihre Funde in zeitlicher und räumli
 
 \section{Tasks}
 
+All these tasks focus on the technical implementation of data analysis, not the interpretation of the results in the context of archaeological research questions. But feel free to observe and document interesting patterns.
+
 \begin{enumerate}
-\item Create a two-columns table with information about the sites (\verb|site_name|) and the amount of features (\verb|feature_name|) documented per sites. Who many sites are represented in the table by more than one feature? 
-\item Create a two-columns table with information about the material  (\verb|to3|, \verb|f4|, ..., \verb|t1a|)
-\item Grouped counts of material by \verb|site_name| \& \verb|mbk_phases| and further cross tables
-\item Visualisation of grouped counts in plot matrizes. For \verb|mbk_phases| these can be constructed as time series plots
-\item Spatial map of sites with mapping of counts computed in task 3.
+\item Create a table with information about the sites (\verb|site_name|) and the amount of features (\verb|feature_name|) documented per sites. Based on this table: Who many sites are represented in the table by more than one feature? 
+\item Create a table with information about the total material occurrence: How many individual objects of \verb|to3|, \verb|f4|, ..., \verb|t1a| do we have in total across all sites? The table should not just contain the shortend type ids (e.g. \verb|to3|), but also a human readable type name (eg. \verb|Pot/vessel type 3|). Plot an ordered bar chart based on this table.
+\item How much artefacts are documented per MBK phase (\verb|mbk_phases|) in total? Visualise the grouped counts with a time series plot. \verb|mbk_phases| is an ordinally scaled time variable. Reduce your data selection to the 6 sites with the most features (cf. Task 1) and draw the same time series for each of these variables (ideally in a plot matrix).
+\item Plot a spatial map of sites based on the coordinate information. Add a meaningful background layer. The size and colour of the site markers should reflect the occurence of \verb|Carinated bowl type| (\verb|kw3|) at the site.
 \item Correspondence Analysis (CA) of material variables
 \item 2D and 3D Visualisation of CA results with mapping of \verb|site_name| \& \verb|mbk_phases|
 \item Mapping of CA axis rank on spatial map
