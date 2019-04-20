@@ -11,3 +11,4 @@
 *.cb
 *.cb2
 .*.lb
+.Rproj.user
