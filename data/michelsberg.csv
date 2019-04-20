@@ -1,4 +1,4 @@
-"","id","site_name","catalogue_nr","feature_nr","to3","f4","b2","to2","b3","b7","kw5","vg1","vg2","t4a","kw2","kw4","b5","t3b","f3","kw3","kw1","b6","to1","b1","t3a","vg4","ks2","ks1","t2b","f2","bs3","t2a","bs2","b4","bs1","f1","t1b","vg3","t1a","mbk_phase","x_utm32n","y_utm32n"
+"feature_name","id","site_name","catalogue_nr","feature_nr","to3","f4","b2","to2","b3","b7","kw5","vg1","vg2","t4a","kw2","kw4","b5","t3b","f3","kw3","kw1","b6","to1","b1","t3a","vg4","ks2","ks1","t2b","f2","bs3","t2a","bs2","b4","bs1","f1","t1b","vg3","t1a","mbk_phase","x_utm32n","y_utm32n"
 "achenheim_1.1",2,"achenheim",1,1.1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,2,0,"I/II",398587,5381681
 "achenheim_1.2",1,"achenheim",1,1.2,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,2,0,0,0,1,0,0,2,0,1,0,0,1,0,0,0,0,0,0,0,"III",398587,5381681
 "didenheim_2",3,"didenheim",2,2,0,0,1,0,0,0,1,1,0,0,1,0,2,0,0,1,0,1,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,"Munz",372268,5286029
