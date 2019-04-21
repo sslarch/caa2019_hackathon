@@ -12,3 +12,7 @@
 *.cb2
 .*.lb
 .Rproj.user
+
+# R stuff
+.RData
+.Rhistory
