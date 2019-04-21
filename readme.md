@@ -15,8 +15,8 @@ This repository contains all relevant information for the CAA2019 Workshop **CAA
 
 ## Organisational information
 
-**Where:** Auditorium Maximum of the Jagiellonian University, Kraków  
-**When:** 2019/04/23  
+**Where:** CW 108, Collegium Witkowiskiego (ul. Gołębia 13), Kraków  
+**When:** 2019/04/23, 10:00 -- ~15:00  
 **Contact:** Clemens Schmid, Martin Hinz, Carolin Tietze  
 
 Please see the handout for further information.
