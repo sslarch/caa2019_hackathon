@@ -7,25 +7,26 @@
 \usepackage{graphicx,url}
 \usepackage[german, english]{babel}
 \usepackage[utf8]{inputenc}
+
+\usepackage{pgfpages}
+\pgfpagesuselayout{resize to}[a4paper,border shrink=5mm]
+
 \renewcommand{\titlesize}{\LARGE}
 \renewcommand{\authorsize}{\small}
-\renewcommand{\instsize}{\footnotesize}
+\renewcommand{\instsize}{\tiny}
 
 %\usepackage{fancybullets}
 \newtheorem{Def}{Definition}
 \definecolor{SectionCol}{rgb}{1.0,0.6,0.0} %orange
 
-
-\title{W4 CAA Scripting Languages Hackathon I – Can you code this?}
+\title{W4 CAA Scripting Languages Hackathon I \\ \Huge\textcolor{SectionCol}{Can you code this?}}
 %Título do projeto
 
 \author{Clemens Schmid$^{1}$, Martin Hinz$^{2}$, Carolin Tietze$^{3}$}
 %nome dos autores
 
 \institute
-{$^{1}$ Römisch-Germanisches Zentralmuseum Leibniz-Forschungsinstitut für Archäologie: Mainz, Rheinland-Pfalz\\
-$^{2}$ Institut für Archäologisches Wissenschaften, Universität Bern \\
-$^{3}$ Institut für Klassische Altertumskunde, Christian-Albrechts-Universität zu Kiel
+{$^{1}$ Römisch-Germanisches Zentralmuseum Leibniz-Forschungsinstitut für Archäologie: Mainz, Rheinland-Pfalz; $^{2}$ Institut für Archäologisches Wissenschaften, Universität Bern; $^{3}$ Institut für Klassische Altertumskunde, Christian-Albrechts-Universität zu Kiel
 }
 %Nome e endereço da Instituição
 
@@ -62,6 +63,38 @@ $^{3}$ Institut für Klassische Altertumskunde, Christian-Albrechts-Universität
 %\renewcommand{\algcapbodystyle}{\bfseries}
 %\renewcommand{\thealgorithm}{\Roman{algorithm}}
 
+\renewcommand{\maketitle}{%
+  \ifthenelse{\boolean{useleftlogo}}{%
+  \begin{minipage}[c]{\logowidth}
+     \printleftlogo
+  \end{minipage}
+  }{}
+  \begin{minipage}[c]{\titlewidth}
+    \begin{center}
+      \renewcommand{\baselinestretch}{2.3}\normalsize
+      {\titlesize \bf \@title}\par
+      \renewcommand{\baselinestretch}{1.0}\normalsize            
+      \vspace{0.4\titleskip}
+      {\authorsize {\bf\@author} \par}
+      {\instsize
+       \vspace{0.2\titleskip}
+       \theinstitute \par
+       \ifthenelse{\equal{\printemail}{}}{%nothing
+         }{%
+         \vspace{0.2\titleskip}
+         \texttt{\printemail}
+         }
+      }
+    \end{center}
+  \end{minipage}%}}
+  \ifthenelse{\boolean{userightlogo}}{%
+  \begin{minipage}[c]{\logowidth}
+     \printrightlogo
+  \end{minipage}
+  }{}
+\vspace{\titleskip}
+}
+
 \maketitle
 
 %%% Begin of Multicols-Enviroment
@@ -97,7 +130,11 @@ The data for this excercise --- \verb|Michelsberg| --- are taken from the R pack
 
 \bigskip
 
-\textit{From ?archdata::Michelsberg:}
+\textit{From} \verb|?archdata::Michelsberg:|
+
+\begin{multicols}{3}
+
+\begin{small}
 
 \begin{itemize}
 \item id: Unique identifier (categorical, integer)
@@ -144,6 +181,10 @@ The data for this excercise --- \verb|Michelsberg| --- are taken from the R pack
 \item y\_utm32n: y coordinate in m; projection UTM WGS 84, zone 32 nord
 \end{itemize}
 
+\end{small}
+
+\end{multicols}
+
 \medskip
 
 Höhn (2002) recorded pottery vessel shapes from 108 archaeological features (pits, ditches etc.) from 69 sites of the Central European Younger Neolithic Michelsberg Culture (MBK; 4350-3500 BC) following Lüning's (1967) typology. Her correspondence analysis of the abundance data (columns 5 to 39) exhibits a pronounced Guttman effect or arch, suggesting the data set is structured by a time gradient. Recently Mischka et al. (2015) projected an 109th Michelsberg assemblage, Flintbek LA48, a pit with Michelsberg pottery from a North German site of the Funnel Beaker Culture (TRB), as a supplementary row into the existing chronology thereby connecting the relative chronologies of TRB and MBK. The data frame contains as attributes the references for the data, a typological key and the map projection. Note that ambiguous fragments of conical bowls (ks1 and ks2) are assigned as 0.5 to each of the two types resulting also in positive entries suitable to analysis by CA.
@@ -156,7 +197,7 @@ Mischka, D., Roth, G. and K. Struckmeyer 2015. Michelsberg and Oxie in contact n
 
 Lüning, J. 1967. Die Michelsberger Kultur: Ihre Funde in zeitlicher und räumlicher Gliederung. Berichte der Römisch-Germanischen Kommission 48, 1-350.
 
-\pagebreak
+%\pagebreak
 
 \section{Tasks}
 
