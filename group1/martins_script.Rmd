@@ -1,0 +1,65 @@
+---
+title: "martins_script"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Task 1
+
+Solution of task 1
+
+```{r}
+Michelsberg <- read.csv("../data/michelsberg.csv")
+
+task_1a <- rowSums(table(Michelsberg$site_name,Michelsberg$feature_name))
+
+knitr::kable(task_1a)
+
+task_1b <- task_1a[task_1a>1]
+
+knitr::kable(task_1b)
+```
+
+```{r}
+library(sp)
+
+michelsberg_sp <- Michelsberg
+coordinates(michelsberg_sp) <- ~x_utm32n+y_utm32n
+
+proj4string(michelsberg_sp) <- CRS("+init=epsg:32632")
+
+library(mapview)
+
+mapview(michelsberg_sp, zcol="kw3", cex="kw3")
+```
+
+
+
+
+
+
+Thats all, folks
+
+Thats all, folks
+
+Thats all, folks
+
+Thats all, folks
+
+Thats all, folks
+
+Thats all, folks
+
+Thats all, folks
+
+Thats all, folks
+
+Thats all, folks
+
+
+
