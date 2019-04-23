@@ -1,0 +1,64 @@
+---
+title: "CAA-Hackathon-Andreas"
+author: "Andreas Angourakis & Jonàs Alcaina"
+date: "23 April 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Task 1
+
+
+
+```{r}
+library(archdata)
+
+#data(Michelsberg)
+
+dt <- read.csv("../data/michelsberg.csv")
+```
+
+
+```{r}
+tb <- data.frame(rowSums(table(dt$site_name, dt$feature_name)))
+
+names(tb) <- "FrequencyOfTypes"
+
+knitr::kable(tb)
+```
+
+
+
+```{r}
+hasFeature <- tb$FrequencyOfTypes > 1
+
+sum(hasFeature)
+
+hist(tb$FrequencyOfTypes)#[hasFeature])
+```
+
+## Task 4
+
+
+```{r}
+library(mapview)
+library(sp)
+```
+
+```{r}
+spatial <- dt
+
+coordinates(spatial) <- ~x_utm32n+y_utm32n
+
+proj4string(spatial) <- CRS("+proj=utm +zone=32")
+
+mapviewOptions(basemaps = c("Esri.WorldImagery", "Esri.WorldPhysical", "Stamen.Watercolor"))
+
+mapview(spatial, zcol = "kw3", cex = "kw3")
+```
+
+
+
