@@ -35,6 +35,8 @@ proj4string(michelsberg_sp) <- CRS("+init=epsg:32632")
 
 library(mapview)
 
+plot(michelsberg_sp)
+
 mapview(michelsberg_sp, zcol="kw3", cex="kw3")
 ```
 
@@ -60,6 +62,7 @@ Thats all, folks
 Thats all, folks
 
 Thats all, folks
+
 
 
 
